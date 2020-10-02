@@ -31,6 +31,19 @@ function postDoc(){
 	window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
 }
 
+('#entry').click(function() {
+
+    var textt = $("input#title").val();
+
+    var shout = $.ajax({
+          type: 'POST',
+          url: "shout.txt",
+          data: textt,
+          dataType: "text",
+
+});
+});
+
 function countChars(countfrom,displayto) {
 	var len = document.getElementById(countfrom).value.length;
 	document.getElementById(displayto).innerHTML = len;
