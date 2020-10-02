@@ -18,10 +18,11 @@ function postDoc(){
 	var textvar = "<h2>"+document.getElementById("title").value+"</h2><p>"+document.getElementById("data").value+"</p>";
 	div.innerHTML = textvar;
 	var xhttp = new XMLHttpRequest();
-	xhttp.open("POST", "text.txt", true); 
+	xhttp.open("POST", "script.php", true); 
 	xhttp.onreadystatechange = function() {
 	   if (this.readyState == 4 && this.status == 200) {
 		 var response = this.responseText;
+		console.log(response);
 	   }
 	};
     // "<div class="entryfield">"+textvar+"</div>"
