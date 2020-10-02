@@ -1,9 +1,8 @@
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "script.php", true);
+  xhttp.open("GET", "text.txt", true);
   xhttp.onload = function(){
 	  if(this.status == 200){
-		  console.log("smth");
 		  document.getElementById("content").appendChild(this.responseText);
 	  }
   }
