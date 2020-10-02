@@ -1,1 +1,1 @@
-<div class="entryfield"><h2>Title</h2><p>Content</p></div>
+<div class="entryfield"><h2>First Post</h2><p>Content of First Post</p></div>
