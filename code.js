@@ -1,5 +1,6 @@
+var xhttp = new XMLHttpRequest();
+
 function loadDoc() {
-  var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "text.txt", true);
   xhttp.onload = function(){
 	  if(this.status == 200){
@@ -10,6 +11,12 @@ function loadDoc() {
 	  }
   }
   xhttp.send();
+}
+
+function postDoc(){
+	const div = document.createElement('div');
+	div.innerHTML = "<div class="entryfield"><h2>"+document.getElementById("title").value+"</h2><p>"+document.getElementById("data").value+"</p></div>";
+	document.getElementById("pagemain").appendChild(div);
 }
 
 function countChars(countfrom,displayto) {
