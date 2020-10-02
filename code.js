@@ -14,7 +14,8 @@ function loadDoc() {
 
 function postDoc(){
 	const div = document.createElement('div');
-	div.innerHTML = "<div class="entryfield"><h2>";
+	div.class = "entryfield";
+	div.innerHTML = "<h2>"+document.getElementById("title").value+"</h2><p>"+document.getElementById("data").value+"</p>";
 	//document.getElementById("pagemain").appendChild(div);
 }
 
