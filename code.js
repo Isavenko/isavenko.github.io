@@ -3,6 +3,7 @@ function loadDoc() {
   xhttp.open("GET", "text.txt", true);
   xhttp.onload = function(){
 	  if(this.status == 200){
+		  //
 		  const div = document.createElement('div');
 		  div.className = 'entryfield';
 		  div.innerHTML = `
