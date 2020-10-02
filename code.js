@@ -37,7 +37,7 @@ function postDoc(){
 
     var shout = $.ajax({
           type: 'POST',
-          url: "shout.txt",
+          url: "text.txt",
           data: textt,
           dataType: "text",
 
