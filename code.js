@@ -31,7 +31,7 @@ function postDoc(){
 	window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
 }
 
-('#entry').click(function() {
+$('#entry').click(function() {
 
     var textt = $("input#title").val();
 
