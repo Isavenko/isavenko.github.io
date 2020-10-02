@@ -15,7 +15,8 @@ function loadDoc() {
 function postDoc(){
 	const div = document.createElement('div');
 	div.className = "entryfield";
-	div.innerHTML = "<h2>"+document.getElementById("title").value+"</h2><p>"+document.getElementById("data").value+"</p>";
+	var textvar = "<h2>"+document.getElementById("title").value+"</h2><p>"+document.getElementById("data").value+"</p>";
+	div.innerHTML = textvar;
 	var xhttp = new XMLHttpRequest();
 	xhttp.open("POST", "script.php", true); 
 	xhttp.onreadystatechange = function() {
@@ -23,7 +24,7 @@ function postDoc(){
 		 var response = this.responseText;
 	   }
 	};
-	xhttp.send(div);
+	xhttp.send(textvar);
 	document.getElementById("pagemain").appendChild(div);
 	window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
 }
