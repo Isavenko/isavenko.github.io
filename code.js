@@ -17,7 +17,7 @@ function postDoc(){
 	div.className = "entryfield";
 	div.innerHTML = "<h2>"+document.getElementById("title").value+"</h2><p>"+document.getElementById("data").value+"</p>";
 	var xhttp = new XMLHttpRequest();
-	xhttp.open("POST", "ajaxfile.php", true); 
+	xhttp.open("POST", "text.txt", true); 
 	xhttp.onreadystatechange = function() {
 	   if (this.readyState == 4 && this.status == 200) {
 		 var response = this.responseText;
