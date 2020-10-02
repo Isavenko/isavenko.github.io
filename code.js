@@ -4,6 +4,7 @@ function loadDoc() {
   xhttp.onload = function(){
 	  if(this.status == 200){
 		  const div = document.createElement('div');
+		  div.className = 'entryfield';
 		  div.innerHTML = `
 		  <h2>`+this.responseText+`</h2>
 		  `;
