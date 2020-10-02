@@ -3,10 +3,11 @@ function loadDoc() {
   xhttp.open("GET", "text.txt", true);
   xhttp.onload = function(){
 	  if(this.status == 200){
-		  //console.log(this.responseText);
-		  console.log(this.responseText);
-		  console.log(this.responseText);
-		  document.getElementById("content").appendChild(this.responseText);
+		  const div = document.createElement('div');
+		  div.innerHTML = `
+		  <h2>`+this.responseText+`</h2>
+		  `;
+		  document.getElementById("contentt").appendChild(div);
 	  }
   }
   xhttp.send();
