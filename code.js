@@ -8,7 +8,7 @@ function loadDoc() {
 		  div.innerHTML = `
 		  <h2>`+this.responseText+`</h2>
 		  `;
-		  document.getElementById("contentt").appendChild(div);
+		  document.getElementById("content").appendChild(div);
 	  }
   }
   xhttp.send();
