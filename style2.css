@@ -23,7 +23,7 @@ width: 75%;
 background-color: #E84A5F;
 padding: 0px;
 margin: 0px;
-min-height: 100px;
+min-height: 100%;
 }
 .sidebar{
 float:right;
