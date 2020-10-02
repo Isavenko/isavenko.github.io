@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Oxygen-Regular;
+	src: url("Oxygen-Regular.ttf");
+}
+
+body{
+margin:0px;
+font-family: Oxygen-Regular;
+background-color:#2A363B;	
+}
+
+h1{
+	font-size: 70;
+	color: #2A363B;
+	text-align:right;
+	padding-top: 100px;
+}
+
+.pagemain{
+float:left;
+width: 75%;
+height: 100%;
+background-color: #E84A5F;
+padding: 0px;
+margin: 0px;
+}
+.sidebar{
+float:right;
+width: 25%;
+height: 100%;
+background-color: #2A363B;
+}
+
+.heading{
+margin:0px;
+padding:0px;
+background-color: #FECEAB;
+padding: 50px;
+padding-bottom: 30px;
+padding-top: 100px;
+}
+
+ul.selection {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FF847C;
+}
+
+li.sel {
+  float: left;
+}
+
+a.sel {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a.sel:hover {
+  background-color: #FECEAB;
+  transition: 0.2s;
+}
+
+.mainheader{
+padding: 0px;
+margin: 0px;
+}
+
+.entryfield {
+background-color: #FF847C;
+margin:20px;
+padding:20px;
+border-radius: 3px;
+}
+
+textarea{
+width:100%;
+height:150px;
+background-color: #FECEAB;
+border: none;
+padding:10px;
+resize: none;
+font-family: Oxygen-Regular;
+border-radius: 3px;
+font-size: 15;
+}
+
+textarea:focus{
+	outline: none;
+}
+
+input.entry{
+width:20%;
+height:40px;
+background-color: #FECEAB;
+margin-top:20px;
+border: none;
+border-radius: 3px;
+font-size: 15;
+}
+
+#count{
+	float: right;
+	margin-top:20px;
+	margin
+}
+
+input.title{
+width:100%;
+background-color: #FECEAB;
+border: none;
+padding:10px;
+resize: none;
+font-family: Oxygen-Regular;
+border-radius: 3px;
+margin-bottom: 20px;
+font-size: 20;
+}
