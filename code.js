@@ -3,7 +3,7 @@ function loadDoc() {
   xhttp.open("GET", "script.php", true);
   xhttp.onload = function(){
 	  if(this.status == 200){
-		  document.getElementById("parentID").appendChild(this.responseText);
+		  document.getElementById("content").appendChild(this.responseText);
 	  }
   }
   xhttp.send();
