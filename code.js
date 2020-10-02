@@ -24,7 +24,8 @@ function postDoc(){
 		 var response = this.responseText;
 	   }
 	};
-	xhttp.send(textvar);
+    // "<div class="entryfield">"+textvar+"</div>"
+	xhttp.send("lmar");
 	document.getElementById("pagemain").appendChild(div);
 	window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
 }
