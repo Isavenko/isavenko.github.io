@@ -32,10 +32,8 @@ function postDoc(){
 }
 
 $('#entry').click(function() {
-
-    var textt = $("input#title").val();
-
-    var shout = $.ajax({
+var textt = $("input#title").val();
+var shout = $.ajax({
           type: 'POST',
           url: "text.txt",
           data: textt,
