@@ -1,6 +1,5 @@
-var xhttp = new XMLHttpRequest();
-
 function loadDoc() {
+	var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "text.txt", true);
   xhttp.onload = function(){
 	  if(this.status == 200){
