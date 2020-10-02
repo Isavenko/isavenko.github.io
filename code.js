@@ -5,6 +5,7 @@ function loadDoc() {
 	  if(this.status == 200){
 		  //console.log(this.responseText);
 		  console.log(this.responseText);
+		  console.log(this.responseText);
 		  document.getElementById("content").appendChild(this.responseText);
 	  }
   }
