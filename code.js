@@ -5,9 +5,8 @@ function loadDoc() {
 	  if(this.status == 200){
 		  //something
 		  const div = document.createElement('div');
-		  div.className = 'entryfield';
 		  div.innerHTML = this.responseText;
-		  document.getElementById("content").appendChild(div);
+		  document.getElementById("pagemain").appendChild(div);
 	  }
   }
   xhttp.send();
