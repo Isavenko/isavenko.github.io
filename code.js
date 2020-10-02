@@ -6,9 +6,7 @@ function loadDoc() {
 		  //something
 		  const div = document.createElement('div');
 		  div.className = 'entryfield';
-		  div.innerHTML = `
-		  <h2>`+this.responseText+`</h2>
-		  `;
+		  div.innerHTML = this.responseText;
 		  document.getElementById("content").appendChild(div);
 	  }
   }
